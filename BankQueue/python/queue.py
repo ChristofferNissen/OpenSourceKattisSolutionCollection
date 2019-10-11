@@ -17,7 +17,8 @@ amounts = []
 total = 0
 while t >= 0:
     for price in customers[t]:
-        # Negate price, since heapq is min heap q, therefore we make a "max heap q" by creating largest negative
+        # Negate price, since heapq is min heap q.
+        # Therefore we make a "max heap q" by creating largest negative
         heappush(amounts, -price)
     
     if amounts:
